@@ -58,8 +58,15 @@ main {
 main .container {
   height: 500px;
   width: 500px;
-  background-color:blue;
   margin:20px auto ;
+  background-color:blue;
+  border: 5px solid red;
+}
+
+main .container .square {
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+  border: 2px solid orange;
 }
 
 footer .scritta {
