@@ -48,10 +48,20 @@ header .input {
 font-size: 30px;
 }
 
+main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 
 main .container {
   height: 500px;
   width: 500px;
   background-color:blue;
   margin:20px auto ;
+}
+
+footer .scritta {
+  margin-top:30px;
 }
