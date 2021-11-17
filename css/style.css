@@ -75,3 +75,26 @@ main .container .square {
   padding:10px;
   margin-left: 40px;
 }
+
+.quaranta {
+  width: calc(100% / 8);
+  height: calc(100% / 8);
+
+}
+
+.ottanta {
+  width: calc(100% / 8);
+  height: calc(100% / 8);
+
+}
+
+
+.quaranta {
+  width: calc(100% / 4);
+  height: calc(100% / 4);
+
+}
+
+.active {
+  background-color: red;
+}
