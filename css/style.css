@@ -67,6 +67,7 @@ main .container .square {
   width: calc(100% / 10);
   height: calc(100% / 10);
   border: 2px solid orange;
+  float: left;
 }
 
 footer .scritta {
