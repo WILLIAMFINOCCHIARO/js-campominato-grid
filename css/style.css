@@ -1,100 +1,54 @@
 * {
-  margin:0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  position: relative;
-}
-
-
+/* header */
 header {
-  background-color: blue;
-  height: 150px;
-  color: white;
+  height: 70px;
 }
 
-header::after{
-  content:"";
-  display: table;
-  clear:both;
-}
-
-header .title {
-  text-align: center;
-}
-
-header .logo {
-  float: left;
-}
-
-header .writes {
-  float: right;
-  padding-right: 60px;
-}
-
-header .logo img {
-  height: 100px;
-  padding-left:50px;
-}
-
-header .input {
-  text-align: center;
-  margin-top: 30px;
-
-}
-.font {
-font-size: 30px;
-}
-
-main {
+.container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
+/* main */
+main {
+  background-color: #7fffd4;
+}
 
-main .container {
-  height: 500px;
+.container-square {
   width: 500px;
-  margin:20px auto ;
-  background-color:blue;
-  border: 5px solid red;
+  height: 500px;
+  margin: 20px auto;
+  border: 1px solid black;
 }
 
-main .container .square {
-  width: calc(100% / 10);
-  height: calc(100% / 10);
-  border: 2px solid orange;
+.container-square::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.square {
   float: left;
+  /* width: calc(100% / 10);  */
+  /* sarà poi data dinamicamente */
+  /* height: calc(100% / 10); */
+   /* sarà poi data dinamicamente */
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
- .scritta {
-  margin-top:30px;
-  border:2px solid red;
-  padding:10px;
-  margin-left: 40px;
-}
-
-.quaranta {
-  width: calc(100% / 8);
-  height: calc(100% / 8);
-
-}
-
-.ottanta {
-  width: calc(100% / 8);
-  height: calc(100% / 8);
-
-}
-
-
-.quaranta {
-  width: calc(100% / 4);
-  height: calc(100% / 4);
-
-}
-
-.active {
-  background-color: red;
+.selected {
+  background-color: yellow;
 }
